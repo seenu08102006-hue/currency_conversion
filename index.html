@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickConvert | Premium Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form action="/" method="GET">
+            <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" step="0.01" name="amount" id="amount" placeholder="Enter amount" required>
+            </div>
+            <div class="input-group">
+                <label for="from">From</label>
+                <select name="from" id="from">
+                    <option value="USD" data-selected-from="USD">USD - US Dollar</option>
+                    <option value="INR" data-selected-from="INR">INR - Indian Rupee</option>
+                    <option value="EUR" data-selected-from="EUR">EUR - Euro</option>
+                    <option value="YEN" data-selected-from="YEN">YEN - Japanese Yen</option>
+                    <option value="GBP" data-selected-from="GBP">GBP - British Pound</option>
+                    <option value="BIT" data-selected-from="BIT">BIT - Bitcoin</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="to">To</label>
+                <select name="to" id="to">
+                    <option value="INR" data-selected-to="INR">INR - Indian Rupee</option>
+                    <option value="USD" data-selected-to="USD">USD - US Dollar</option>
+                    <option value="EUR" data-selected-to="EUR">EUR - Euro</option>
+                    <option value="YEN" data-selected-to="YEN">YEN - Japanese Yen</option>
+                    <option value="GBP" data-selected-to="GBP">GBP - British Pound</option>
+                    <option value="BIT" data-selected-to="BIT">BIT - Bitcoin</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-convert">Convert Now</button>
+        </form>
+
+        <!-- RESULT_PLACEHOLDER -->
+    </div>
+</body>
+</html>
